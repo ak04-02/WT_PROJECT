@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (logo) {
         logo.addEventListener("click", function () {
-            window.location.href = "/index1.html";
+            window.location.href = "*/index1.html";
         });
     } else {
         console.error("Logo element not found!");

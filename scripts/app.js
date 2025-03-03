@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let searchIcon = document.querySelector(".fa-search"); 
     let searchBox = document.querySelector("#search");
     let locationDropdown = document.querySelector("#locate");
-    let logged_in = true;
+    let logged_in = false;
     let before_login = document.getElementsByClassName('before_login');
     let after_login = document.getElementsByClassName('after_login');
     function toggleElementVisibility(elementCollection) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (logged_in) {
         toggleElementVisibility(before_login); // Hide before_login elements
-    } else {
+    } else if(!logged_in){
         toggleElementVisibility(after_login); // Hide after_login elements
     }
     let currentLocations = [

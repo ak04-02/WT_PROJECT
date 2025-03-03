@@ -5,35 +5,21 @@
     <title>Search Results</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="scripts/app.js" type="text/javascript"></script>
-    <script src="scripts/script1.js"></script>
 </head>
 
 <body>
-    <section id="first_page">
-        <header>
-            <div id="logo_1"></div>
-            <div>
-                <nav>
-                    <div class="before_login"><a href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a></div>
-                    <div class="before_login"><a href="user_reg.html"><i class="fas fa-user-plus"></i> Register</a></div>
-                    <div><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></div>
-                    <div><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></div>
-                    <div><a href="discuss.html"><i class="fas fa-comments"></i> Discuss</a></div>
-                    <div class="after_login"><a href="delivery_request.html"><i class="fas fa-truck"></i> Delivery Request</a></div>
-                </nav>
-            </div>
-            <div id="Left">
+    <header>
+        <div id="logo_1"></div>
+        <div>
+            <nav>
+                <div><a href="login.html">Log In</a></div>
+                <div><a href="user_reg.html">Register</a></div>
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+            </nav>
+        </div>
+    </header>
 
-                <select name="locate" id="locate">
-                    <option value="Anand">Anand</option>
-                </select>
-                <div id="search_box">
-                  <i class="fas fa-search"></i>
-                  <input type="text" id="search" placeholder="Search..." />
-                </div>
-            </div>
-        </header>
     <section class="search-results">
         <h2>Search Results for "Product Name"</h2>
 
@@ -45,7 +31,7 @@
                 <p>Description: Lorem ipsum dolor sit amet...</p>
                 <p>Location: <a href="#">View on Map</a></p>
                 <p>Stock: In Stock</p>
-                <button id="sub1">Order</button>
+                <button>Order</button>
             </div>
 
             <div class="product-card">
@@ -55,7 +41,7 @@
                 <p>Description: Consectetur adipiscing elit...</p>
                 <p>Location: <a href="#">View on Map</a></p>
                 <p>Stock: Out of Stock</p>
-                <button id="sub1" disabled>Out of Stock</button>
+                <button disabled>Out of Stock</button>
             </div>
 
             <!-- Add more product cards here -->
@@ -73,6 +59,7 @@
             &copy; 2025 LocalFinder. All rights reserved.
         </div>
     </footer>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>

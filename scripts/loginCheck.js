@@ -1,3 +1,9 @@
+document.getElementById("login_form").addEventListener("submit", function (event) {
+    if (!validateForm(event)) {
+      event.preventDefault(); 
+    }
+  });
+
 document.addEventListener("DOMContentLoaded", function () {
     let loginForm = document.querySelector("form[name='login_form']");
 

@@ -31,7 +31,14 @@
 //   },
 // ];
 
-function validateForm() {
+document.getElementById("reg_form").addEventListener("submit", function (event) {
+  if (!validateForm(event)) {
+    event.preventDefault(); 
+  }
+});
+
+function validateForm(event) {
+  // event.preventDefault();
   let username = document.getElementById("name").value;
   let password = document.getElementById("pass1").value;
   let confirmPassword = document.getElementById("pass2").value;
